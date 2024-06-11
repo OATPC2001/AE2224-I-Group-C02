@@ -48,7 +48,7 @@ for number in identities:
     max_passengers = acdict["pax"]["max"]
     W_const = acdict["limits"]["OEW"]+0.8*max_passengers*84
     mass0 = MTOW
-    for i in range(2):
+    for i in range(3):
         mass=mass0
         n = 0
         for (dt, tas, alt, pa) in zip(time_deltas, tasa, alta, path_angles):
