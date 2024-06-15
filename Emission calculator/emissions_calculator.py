@@ -106,7 +106,7 @@ for group_key, group_df in grouped_df_flights:
     final_df.loc[len(final_df)] = entry
 
     if count % 50000 == 0:
-        print(f'{count} of {len(df_flights)} counts completed ({count / len(df_flights) * 100}%)')
+        print(f'{count} of {len(grouped_df_flights)} counts completed ({count / len(grouped_df_flights) * 100}%)')
 
 # Save final results to a CSV file
 final_df.to_csv('Emissions2019.csv', sep=',', index=False, encoding='utf-8')  # Rename it to the correct name
